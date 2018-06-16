@@ -13,8 +13,10 @@ def tim_quy_luat_so(number_n):
             if f_n % 2 == 1:
                 list.append(-1)
         print(list)
-try:
-    a = int(input("Nhap 1 so bat ki:"))
-    tim_quy_luat_so(a)
-except:
-    print("Nhap lai di anh zai, Troll nhau a??:)")
+while True:
+    try:
+        a = int(input("Nhap 1 so bat ki:"))
+        tim_quy_luat_so(a)
+        break
+    except:
+        print("Nhap lai di anh zai, Troll nhau a??:)")
